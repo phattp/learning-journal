@@ -50,12 +50,7 @@ nav {
   padding-bottom: 1.25em;
 }
 
-.logo-img {
-  grid-area: lg;
-}
-
 .logo-name {
-  grid-area: ln;
   font-family: "Roboto", sans-serif;
   font-size: 0.847rem;
   margin: 0;
@@ -68,7 +63,6 @@ ul {
   list-style: none;
   margin: 0 0 0 auto;
   gap: 1em;
-  color: #090909;
   font-size: 0.75rem;
   font-weight: 600;
 }
@@ -161,7 +155,19 @@ h3 {
 }
 
 /* Link */
-a {
+.nav-a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.li-a {
+  text-decoration: none;
+  color: #090909;
+}
+
+.viewmore-a {
   grid-area: a;
   display: block;
   text-align: center;
