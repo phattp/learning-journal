@@ -5,6 +5,10 @@ function renderBlogs() {
   articleContainer.innerHTML = "";
 
   blogArray.forEach((blog) => {
+    const articleLink = document.createElement("a");
+    articleLink.classList.add("article-a");
+    articleLink.href = "blog.html";
+
     const article = document.createElement("article");
 
     const articleImg = document.createElement("img");
@@ -37,7 +41,9 @@ function renderBlogs() {
     article.appendChild(articleName);
     article.appendChild(articleDesc);
 
-    articleContainer.appendChild(article);
+    articleLink.appendChild(article);
+
+    articleContainer.appendChild(articleLink);
   });
 }
 

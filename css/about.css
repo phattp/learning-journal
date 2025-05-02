@@ -13,6 +13,7 @@ body {
   color: #151515;
 }
 
+/* Layout */
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -66,20 +67,40 @@ ul {
   font-weight: 600;
 }
 
-.nav-a {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.25em;
-}
-
-.li-a {
-  text-decoration: none;
-  color: #090909;
-}
-
 main {
   padding-top: 1.625rem;
+  padding-bottom: 3.5rem;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2.5625rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+  height: auto;
+  border: 1px solid #eee;
+  border-radius: 0.25rem;
+  max-height: 28.125rem;
+}
+
+.card > * {
+  padding: 0 0.75rem;
+}
+
+.card > .article-img {
+  padding: 0;
+}
+
+.about-article {
+  margin: 0 0 2.8125rem 0;
 }
 
 footer {
@@ -89,11 +110,7 @@ footer {
   padding: 2.3125em 0;
 }
 
-.profile-img {
-  width: 11.375em;
-  border-radius: 50%;
-}
-
+/* Typography */
 h1 {
   font-size: 2.1775rem;
   color: #151515;
@@ -102,10 +119,6 @@ h1 {
 
 .subheading {
   margin: 0 0 3.125rem 0;
-}
-
-.about-article {
-  margin: 0 0 2.8125rem 0;
 }
 
 .about-h2 {
@@ -138,15 +151,6 @@ h2 {
   margin: 0 0 2.5625rem 0;
 }
 
-.article-img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-  height: 14.5em;
-  margin-bottom: 0.875em;
-  border-radius: 0.1875rem;
-}
-
 h3 {
   font-size: 0.75rem;
   color: #ececec;
@@ -157,6 +161,44 @@ h3 {
   font-size: 0.75rem;
   color: #d7d7d7;
   margin: 0;
+}
+
+/* Image */
+.profile-img {
+  width: 11.375em;
+  border-radius: 50%;
+}
+
+.article-img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 14.5em;
+  margin-bottom: 0.875em;
+}
+
+/* Link */
+.nav-a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.li-a {
+  text-decoration: none;
+  color: #090909;
+}
+
+.article-a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.article-a:hover {
+  transform: translateY(-0.3125rem);
+  transition: transform 0.3s ease;
 }
 
 @media (min-width: 768px) {
@@ -170,7 +212,6 @@ h3 {
   .article-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0 1.625em;
   }
 
   nav,
