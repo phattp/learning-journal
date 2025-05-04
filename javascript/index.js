@@ -1,16 +1,19 @@
 import blogArray from "./data.js";
 
+document
+  .getElementById("viewmore-a")
+  .addEventListener("click", () => alert("No more post!"));
+
 function renderBlogs() {
   const articleContainer = document.getElementById("article-container");
   articleContainer.innerHTML = "";
 
-  blogArray.slice(0, 3).forEach((blog) => {
+  blogArray.forEach((blog) => {
     const articleLink = document.createElement("a");
     articleLink.classList.add("article-a");
-    articleLink.href = "blog.html";
+    articleLink.href = "./html/blog.html";
 
     const article = document.createElement("article");
-    article.classList.add("card");
 
     const articleImg = document.createElement("img");
     articleImg.classList.add("article-img");

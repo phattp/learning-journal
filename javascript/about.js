@@ -4,12 +4,13 @@ function renderBlogs() {
   const articleContainer = document.getElementById("article-container");
   articleContainer.innerHTML = "";
 
-  blogArray.forEach((blog) => {
+  blogArray.slice(0, 3).forEach((blog) => {
     const articleLink = document.createElement("a");
     articleLink.classList.add("article-a");
-    articleLink.href = "blog.html";
+    articleLink.href = "../html/blog.html";
 
     const article = document.createElement("article");
+    article.classList.add("card");
 
     const articleImg = document.createElement("img");
     articleImg.classList.add("article-img");

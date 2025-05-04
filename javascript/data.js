@@ -4,7 +4,7 @@ const blogArray = [
     name: "Blog one",
     desc: "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
     date: "2025-05-01",
-    image: "images/article-image-03.png",
+    image: "../images/article-image-03.png",
     altText: "A laptop with coding screen.",
   },
   {
@@ -12,7 +12,7 @@ const blogArray = [
     name: "Blog two",
     desc: "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
     date: "2025-05-01",
-    image: "images/article-image-02.png",
+    image: "../images/article-image-02.png",
     altText: "A hand holding a light bulb.",
   },
   {
@@ -20,7 +20,7 @@ const blogArray = [
     name: "Blog three",
     desc: "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
     date: "2025-05-01",
-    image: "images/article-image-01.png",
+    image: "../images/article-image-01.png",
     altText: "A laptop with web browser screen.",
   },
   {
@@ -28,7 +28,7 @@ const blogArray = [
     name: "Blog four",
     desc: "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
     date: "2025-05-01",
-    image: "images/blog-image-03.png",
+    image: "../images/blog-image-03.png",
     altText: "A woman walk in desert.",
   },
   {
@@ -36,7 +36,7 @@ const blogArray = [
     name: "Blog five",
     desc: "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
     date: "2025-05-01",
-    image: "images/blog-image-01.png",
+    image: "../images/blog-image-01.png",
     altText: "IDE screen with React logo.",
   },
   {
@@ -44,7 +44,7 @@ const blogArray = [
     name: "Blog six",
     desc: "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
     date: "2025-05-01",
-    image: "images/blog-image-05.png",
+    image: "../images/blog-image-05.png",
     altText: "Dark purple light",
   },
 ];
